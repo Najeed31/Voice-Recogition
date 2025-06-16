@@ -49,6 +49,14 @@ pip install numpy scipy PyQt5 scikit-learn pyaudio SpeechRecognition
 - The system compares the sample to all trained models.
 - If a match is found, the student's attendance is marked.
 
+### Folders and .txt Files:
+- These files are important and are used in the code for maintaining voice recordings.
+- training_set_addition.txt contains the .wav file names of all the recorded samples and these names are read from this file when training the model.
+- testing_set_addition.txt contains the .wav file name of the voice being tested at run time.
+- training_set folder contains all the .wav files taken from the user to train the model. The files are automatically saved in this location as long as the folder is in the same directory as TrainData.ipynb.
+- trained_models folder contains all the .gmm models trained from the .wav files in the training_set. The files are automatically accessed from training_set folder and the .gmm saved in the trained_models folder as long as the folder is in the same directory as TrainData.ipynb.
+- testing_set contains the .wav file of the voice being tested at run time.
+
 ### GUI:
 
 Developed in PyQt5.
